@@ -1,6 +1,10 @@
 #include <cstdio>
 using namespace std;
 
+// Header File
+#define Swap(a, b) ((a) ^= (b), (b) ^= (a), (a) ^= (b))
+
+// Function
 void swap(int &a, int &b){
     b ^= a ^= b ^= a;
 }
